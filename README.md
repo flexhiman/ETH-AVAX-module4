@@ -60,4 +60,20 @@ The task was to create an ERC20 token and deploy it on the Avalanche network for
    - **Function:** `burn(uint amount)`
    - **Description:** Allows players to burn their tokens, reducing their balance.
   
+## Bonus Functionality
+
+This DegenToken contract includes a bonus system designed to encourage player engagement and reward loyalty. The specifics are as follows:
+
+- **Bonus Threshold:** Players receive a bonus when their token balance reaches **1000 DGN**.
+- **Bonus Amount:** Upon reaching this threshold, players are awarded an additional **50 DGN** tokens.
+
+### How It Works
+
+1. **After Minting:** When the owner mints tokens for a player, the contract checks if the new balance qualifies for a bonus. If it does, the bonus is automatically minted and added to the player’s balance.
+  
+2. **Upon Transfer:** Similarly, after a player transfers tokens, the contract checks the recipient's new balance for eligibility. If the balance exceeds the threshold, the bonus is awarded.
+
+This incentivizes players to engage more actively with the token ecosystem, fostering a thriving in-game economy.
+
+  
   ### After completion of these procedure verify it by checking the activities of the deployed address.
