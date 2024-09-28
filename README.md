@@ -76,4 +76,4 @@ This DegenToken contract includes a bonus system designed to encourage player en
 This incentivizes players to engage more actively with the token ecosystem, fostering a thriving in-game economy.
 
   
-  ### After completion of these procedure verify it by checking the activities of the deployed address.
+## After completion of these procedure verify it by checking the activities of the deployed address.
