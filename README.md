@@ -16,7 +16,7 @@ Degen Gaming is a renowned game studio that has approached us to create a unique
 
 ## Challenge
 
-Your task is to create an ERC20 token and deploy it on the Avalanche network for Degen Gaming. The smart contract should include:
+The task was to create an ERC20 token and deploy it on the Avalanche network for Degen Gaming. The smart contract should include:
 
 - **Minting new tokens:** Only the owner can mint tokens.
 - **Transferring tokens:** Players can transfer their tokens to others.
