@@ -77,3 +77,4 @@ This incentivizes players to engage more actively with the token ecosystem, fost
 
   
 ## After completion of these procedure verify it by checking the activities of the deployed address.
+https://testnet.snowtrace.io/ 
