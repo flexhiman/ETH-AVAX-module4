@@ -4,11 +4,12 @@ Welcome to the Degen Gaming Token project! This project implements an ERC20 toke
 
 ## Table of Contents
 
-- Description
-- Challenge
-- Tools Used
-- Smart Contract Features
-  
+- [Description](#description)
+- [Challenge](#challenge)
+- [Tools Used](#tools-used)
+- [Smart Contract Features](#smart-contract-features)
+- [Bonus Functionality](#bonus-functionality)
+- [Verification](#verification)
 
 ## Description
 
@@ -22,7 +23,8 @@ The task was to create an ERC20 token and deploy it on the Avalanche network for
 - **Transferring tokens:** Players can transfer their tokens to others.
 - **Redeeming tokens:** Players can redeem their tokens for items in the in-game store.
 - **Checking token balance:** Players can check their token balance at any time.
-- **Burning tokens:** Anyone can burn tokens that they own.
+- **Burning tokens:** Players can burn tokens that they own.
+- **Managing in-game items:** The owner can add items to the in-game store.
 
 ## Tools Used
 
@@ -52,14 +54,18 @@ The task was to create an ERC20 token and deploy it on the Avalanche network for
    - **Function:** `getBalance()`
    - **Description:** Returns the token balance of the caller.
 
-4. **Redeem Tokens**
-   - **Function:** `redeem(uint rewardCategory)`
-   - **Description:** Allows players to redeem tokens for in-game rewards. The amount required for redemption is passed as a parameter.
+4. **Add Item**
+   - **Function:** `addItem(string memory itemName, uint256 itemPrice)`
+   - **Description:** Allows the owner to add a new item to the in-game store.
 
-5. **Burn Tokens**
-   - **Function:** `burn(uint amount)`
+5. **Redeem Tokens**
+   - **Function:** `redeem(uint256 itemId)`
+   - **Description:** Allows players to redeem tokens for in-game rewards. The amount required for redemption is specified by the item price.
+
+6. **Burn Tokens**
+   - **Function:** `burn(uint256 amount)`
    - **Description:** Allows players to burn their tokens, reducing their balance.
-  
+
 ## Bonus Functionality
 
 This DegenToken contract includes a bonus system designed to encourage player engagement and reward loyalty. The specifics are as follows:
@@ -75,6 +81,11 @@ This DegenToken contract includes a bonus system designed to encourage player en
 
 This incentivizes players to engage more actively with the token ecosystem, fostering a thriving in-game economy.
 
-  
-## After completion of these procedure verify it by checking the activities of the deployed address.
-https://testnet.snowtrace.io/ 
+## Verification
+
+After completing the procedures, verify the activities of the deployed address at:  
+[Snowtrace Testnet Explorer](https://testnet.snowtrace.io/)
+
+---
+
+This README provides an overview of the Degen Gaming Token project, its features, and how to interact with the smart contract. For further inquiries or contributions, please feel free to reach out!
